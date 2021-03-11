@@ -76,10 +76,7 @@
         <td>М.П.</td>
         <td>М.П.</td>
     </tr>
-
 </table>
-
-
 </body>
 </html>
 

@@ -9,6 +9,6 @@ class Link extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'link',
+        'contract_number'
     ];
 }

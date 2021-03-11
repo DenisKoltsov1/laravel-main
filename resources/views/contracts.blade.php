@@ -16,8 +16,7 @@
                     <td>{{$contract->created_at}}</td>
                     <td>
                     <form action="{{route('download', $contract->contract_number)}}" method="get">
-                        @method('GET')
-                        <input type="hidden"  value="{{$contract->contract_number}}">
+                        <input type="hidden"  value="">
                         <button type="submit">Скачать</button>
                     </form>
                     </td>

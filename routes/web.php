@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/','index')->name('home');
-Route::post('/create', [ \App\Http\Controllers\ContractGeneratorController::class, 'create'])->name('create');
-Route::get('/contracts', [ \App\Http\Controllers\ContractGeneratorController::class, 'index'])->name('contracts');
-Route::get('/download/{id}', [ \App\Http\Controllers\ContractGeneratorController::class, 'download'])->name('download');
+Route::post('/create', [ \App\Http\Controllers\ContractController::class, 'create'])->name('create');
+Route::get('/contracts', [ \App\Http\Controllers\ContractController::class, 'index'])->name('contracts');
+Route::get('/download/{id}', [ \App\Http\Controllers\ContractController::class, 'download'])->name('download');
 
 
 

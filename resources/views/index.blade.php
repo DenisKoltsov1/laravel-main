@@ -65,8 +65,8 @@
                         </div>
                         <div class="">
                             <label for="validationAdress">Юридический адрес:</label>
-                            <textarea class="form-control" name="our_adress" id="validationAdress"></textarea>
-                            <div class="invalid-feedback">value="{{old('our_adress')}}"</div>
+                            <textarea class="form-control" name="our_adress" id="validationAdress">{{old('our_adress')}}</textarea>
+                            <div class="invalid-feedback"></div>
                             @error('our_adress')
                             <div class="alert alert-danger mt-1 h-1">{{$message}}</div>
                             @enderror
@@ -122,9 +122,9 @@
                         </div>
                         <div class="mb-3">
                             <label for="validationAdress2">Юридический адрес:</label>
-                            <textarea class="form-control " value="{{old('counterparty_adress')}}"name="counterparty_adress"id="validationAdress2" ></textarea>
+                            <textarea class="form-control " name="counterparty_adress"id="validationAdress2" ></textarea>
                             <div class="invalid-feedback">
-                                Пожалуйста, введите адрес в текстовое поле.
+                                {{old('counterparty_adress')}}
                             </div>
                             @error('counterparty_adress')
                             <div class="alert alert-danger mt-1 h-1">{{$message}}</div>
